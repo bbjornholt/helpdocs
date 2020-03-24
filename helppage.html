@@ -1,0 +1,111 @@
+<html>
+<head>
+
+<style>
+
+.textwrapper {
+	float:block;
+	margin: 30px 14% 30px 14%;
+	font-family: 'BCSans';
+	font-style: normal;
+	  font-size: 16px;
+	  line-height: 1.6;
+	  margin-bottom: 36px;
+	  color: #494949;
+
+
+}
+
+</style>
+
+</head>
+
+
+<body class="textwrapper">
+
+<h1>Learn more about the BC Services Card Self-Serve</h1>
+
+<h2>Getting Started – Info for Managers</h2>
+
+<h3>About the BC Services Card</h3>
+
+<p>The BC Services Card is a government issued ID that can be used to log in to participating services online when it is paired with your mobile device. The BC Services Card provides a high identity assurance level which gives your public agency clients the confidence that the person trying to access their online service is who they say they are. 
+Learn more about the BC Services Card.</p>
+
+
+<h3>Who is this for?</h3>
+
+
+<p>This BC Services Card self-service implementation is available for organizations that fall within the BC Broader Public Sector (BPS). 
+The BC Services Card Self Service application enables organizations within the BPS to have an easy -access point into deploying the BC Services Card as an authentication mechanism for the BPS organization’s own web application.
+We want to help BPS agencies integrate with the BC Services Card.</p>
+
+<p>This BC Services Card self-service implementation is available for organizations that fall within the BC Broader Public Sector (BPS). 
+The BC Services Card Self Service application enables organizations within the BPS to have an easy -access point into deploying the BC Services Card as an authentication mechanism for the BPS organization’s own web application.
+We want to help BPS agencies integrate with the BC Services Card</p>
+
+<p>We use a two-stepped approach where the BPS teams can experiment with an integration in our test environment, using fictious BC Services Card data as a test and, when they are ready, prepare and submit their materials to create a live integration with real citizen BC Services Cards.</p>
+
+<h3>Step 1: Experiment through a proof of concept</h3>
+
+<p>We call the activities in this step a development access request. It is designed to be free from barriers, enabling developers to easily access data within a protected development tier. It allows for a quick implementation of a proof of concept or a working model of the BC Services Card within a BPS application. The key things to keep in mind in this step:</p>
+<ul>
+<li>Identity Information: The BC Services Card provides a higher level of identity assurance and during an authentication transaction, identity information about a person is available. We’ve created a set of pre-defined identity data attributes or scope packages as we call them, for BPS developers to experiment with.  We believe offering these packages provides a simple experience in understanding how to integrate with BC Services Card. </li>
+<li>Test Accounts: Test BC Services Card accounts are provided to let developers test their work using mock data.</li>
+<li>Key and Secret: After submitting a development access request, a developer obtains a data sharing key and secret as per our protocols of Open ID Connect API.</li>
+</ul>
+
+<h3>Step 2: Begin the Live BC Services Card request process</h3>
+
+<p>Once the proof of concept has been tested and is completed to the BPS’ satisfaction, the BPS team should inform the Provincial Identity Information Management (IDIM) Program through the self-service application to begin the process of a Live Access Request. </p>
+<p>The Live Access Request process is designed to enable BPS teams to work at their own pace to understand and address the various categories of compliance before integrating with a live production-ready environment of BC Services Card data. A member of the Provincial Identity Information Management Program is always available to help BPS clients in completing the integration components. </p>
+<p>The BC Services Card self-service application guides the user through each of the required compliance categories to address integral information required by the Provincial Identity Information Management Program. The Provincial Identity Information Management Program is mandated to provide identity and authentication services using the BC Services Card to support citizen transactions with government services.</p>
+<p>Once a user has completed all of the compliance categories, a member of the Provincial Identity Information Management Program will provide the BPS team with a data sharing key and secret for using the OpenIDConnect (OIDC) API to provide authentication for the live production environment.</p>
+
+<hr>
+<h2>Technical Overview</h2>
+<p>There are a number of different ways in which a web application might use the BC Services Card as a login option, we discuss three common architectures. </p>
+
+<p>For all architectures the BC Services Card uses Open ID Connect (OIDC) as the authentication mechanism whereby the user is presented a login screen from the BC Services Card (or IAS) infrastructure and the authentication and validation therein are completely separate to the calling application. </p>
+
+<p>On successful login, a token is passed to the calling application, which can be used to get user attribute data (also known as “scopes” ) such as email address, first and last names or mailing address in subsequent calls to IAS. In this application, the scopes are pre-defined in packages. You will select a package that meets the needs of your organization.</p>
+
+<h3>Direct browser architecture</h3>
+<img src="direct-browser-architecture.png">
+
+
+<h3>Direct webapp architecture</h3>
+
+<img src="direct-webapp-architecture.png">
+
+<h3>Proxy architecture</h3>
+<img src="proxy-architecture.png">
+
+
+<h2>***Recommended technical resources</h2>
+<ul>
+	<li>
+	</li>
+
+</ul>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
